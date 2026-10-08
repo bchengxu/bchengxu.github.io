@@ -12,7 +12,7 @@ I am a Ph.D. student in Computer Science and Technology at the **School of Compu
 
 My research focuses on **automated research**, where I develop intelligent agents to automate literature review, idea generation, experimentation, and scientific writing. A key part of this work is **automated machine learning (AutoML)**: combining large language models with Bayesian optimization to automate feature engineering, algorithm selection, hyperparameter tuning, and model ensembling. I also work on **AI for systems**, using AI-driven optimization to improve the performance and efficiency of traditional systems such as databases, as well as LLM systems.
 
-I lead **AutoSci**, an automated research system spanning literature review, ideation, experimentation, and writing, and **[Openbox](https://github.com/PKU-DAIR/open-box)**, a general-purpose black-box optimization system. My industry collaborations include Tencent, Huawei, and PetroChina.
+I lead **[AutoSci](https://github.com/skyllwt/AutoSci)**, an automated research system spanning literature review, ideation, experimentation, and writing, and **[Openbox](https://github.com/PKU-DAIR/open-box)**, a general-purpose black-box optimization system. My industry collaborations include Tencent, Huawei, and PetroChina.
 
 Contact: [beichengxu@stu.pku.edu.cn](mailto:beichengxu@stu.pku.edu.cn).
 
