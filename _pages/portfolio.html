@@ -1,14 +1,27 @@
 ---
-layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+layout: single
+title: "Projects"
+permalink: /projects/
 author_profile: true
+redirect_from:
+  - /portfolio/
 ---
 
-{% include base_path %}
-
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+{% assign projects = site.portfolio | sort: 'order' %}
+{% for project in projects %}
+<section class="project-entry">
+  <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+  <p><strong>{{ project.role }}</strong></p>
+  {{ project.content }}
+</section>
 {% endfor %}
 
+{% assign industry_projects = site.data.cv.experience | where: 'show_on_projects', true %}
+{% for project in industry_projects %}
+<section class="project-entry">
+  <h2>{{ project.organization }}: {{ project.topic }}</h2>
+  <p><strong>{{ project.role }}</strong> · {{ project.period }}</p>
+  <p>{{ project.description }}</p>
+  <p><a href="{{ project.publication_url | relative_url }}">Paper</a></p>
+</section>
+{% endfor %}

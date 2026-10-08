@@ -1,0 +1,8 @@
+{% assign publication_heading_level = include.heading_level | default: 3 %}
+<article class="publication-entry">
+  <h{{ publication_heading_level }}><a href="{{ include.paper.url | relative_url }}">{{ include.paper.title }}</a></h{{ publication_heading_level }}>
+  <div class="publication-authors">{{ include.paper.authors | markdownify }}</div>
+  <p class="publication-venue"><em>{{ include.paper.venue }}</em>, {{ include.paper.year }}{% if include.paper.presentation %}. <strong>{{ include.paper.presentation }}</strong>{% endif %}.</p>
+  {% if include.paper.equal_contribution %}<p class="publication-note">* Equal contribution.</p>{% endif %}
+  {% include publication-links.html paper=include.paper %}
+</article>

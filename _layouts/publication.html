@@ -1,0 +1,11 @@
+---
+layout: single
+---
+
+<div class="publication-authors">{{ page.authors | markdownify }}</div>
+{% if page.equal_contribution %}<p class="publication-note">* Equal contribution.</p>{% endif %}
+{% include publication-links.html paper=page %}
+
+{{ content }}
+
+<p><a href="{{ '/publications/' | relative_url }}">All publications</a></p>
